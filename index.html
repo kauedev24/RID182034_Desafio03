@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board de Tarefas</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400..600&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Board de Tarefas</h1>
+        <header>
+            <form action="">
+                <input type="text" id="name-task" placeholder="Nome da tarefa" arial-label="Nome da tarefa">
+                <input type="text" id="label-task" placeholder="Etiqueta" aria-label="Etiqueta">
+
+                <button type="submit" id="add-task-btn" aria-label="Salvar tarefa na lista de tarefas">+</button>
+            </form>
+        </header>
+        <section>
+            <ul id="list-tasks"></ul>
+        </section>
+    </main>
+</body>
+</html>
