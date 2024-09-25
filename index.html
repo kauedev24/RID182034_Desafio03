@@ -3,30 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Board de Tarefas</title>
 
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400..600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
     <!-- Estilos -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/assets/styles.css">
+
+    <!-- Scrips -->
+     <script src="assets/index.js"></script>
+
+    <!-- Título -->
+    <title>Board de Tarefaas - DNC</title>
 </head>
 <body>
     <main>
-        <h1>Board de Tarefas</h1>
+        <!-- Cabeçalho -->
         <header>
-            <form action="">
-                <input type="text" id="name-task" placeholder="Nome da tarefa" arial-label="Nome da tarefa">
-                <input type="text" id="label-task" placeholder="Etiqueta" aria-label="Etiqueta">
-
-                <button type="submit" id="add-task-btn" aria-label="Salvar tarefa na lista de tarefas">+</button>
-            </form>
+            <h1>Board de Tarefas</h1>
         </header>
-        <section>
-            <ul id="list-tasks"></ul>
+
+        <!-- Inserção dos dados da tarefa -->
+        <section id="form-components">
+            <form>
+                <input type="text" placeholder="Nome da tarefa" aria-label="Nome da tarefa">
+                <input type="text" placeholder="Etiqueta" aria-label="Etiqueta">
+
+                <button type="submit">+</button>
+            </form>
         </section>
+        
+        <!-- Lista de cartões de tarefa -->
+        <section id="task-cards">
+            <ul id="task-list"></ul>
+        </section>
+
+        <!-- <div id="gray-line"></div> -->
     </main>
 </body>
 </html>
