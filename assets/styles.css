@@ -47,7 +47,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
-    margin-bottom: 2.4rem;
 
     & > input {
         height: 5rem;
@@ -81,23 +80,29 @@ header {
 
 #task-cards {
     height: 40rem;
+    margin: 2.4rem 0;
+
+    & > ul {
+        padding-inline-start: 0 rem;
+        height: 100%;
+        overflow: auto;
+    }
+
+    & > ul > li {
+        width: 100%;
+        border: .1rem solid rgb(238,238,238);
+        border-radius: 1.6rem;
+        padding: 2.4rem 3.2rem;
+        margin-bottom: .8rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        transition: opacity 1s ease, transform 1s ease;
+    }
 }
 
-#task-list {
-    display: flex;
-    flex-direction: column;
-    gap: .8rem;
-}
-
-.card {
-    width: 100%;
-    border: .1rem solid rgb(238,238,238);
-    border-radius: 1.6rem;
-    padding: 2.4rem 3.2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .info {
     display: flex;
@@ -151,6 +156,12 @@ header {
 
     font-size: 1.8rem;
     color: rgb(255,255,255);
+
+    cursor: pointer;
+    
+    &:hover {
+        background-color: rgba(45,112,253,0.8);
+    }
 }
 
 /* 
@@ -187,6 +198,10 @@ header {
 
     #task-cards {
         height: 32.5rem;
+
+        & > ul > li {
+            flex-direction: row;
+        }
     }
     
     .card {
