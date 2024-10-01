@@ -34,13 +34,18 @@ main {
 }
 
 header {
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.4rem;
 
     & > h1 {
         font-weight: 600;
         font-size: 3.2rem;  
         color: rgb(17,23,94);
     }
+}
+
+header h1 a {
+    text-decoration: none;
+    color: rgb(17,23,94);
 }
 
 #form-components form {  
@@ -103,7 +108,6 @@ header {
     }
 }
 
-
 .info {
     display: flex;
     flex-direction: column;
@@ -125,7 +129,6 @@ header {
     gap: .8rem;
     
     & > span {
-        width: 6.7rem;
         border: .1rem solid rgb(177,186,203);
         border-radius: 1.6rem;
         padding: .4rem .8rem;
@@ -164,12 +167,25 @@ header {
     }
 }
 
-/* 
+footer {
+    text-align: right;
+
+    & > p {
+        font-family: Inter, "sans-serif";
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: rgb(177,186,203);
+
+        margin-top: 1rem;
+    }
+}
+
 #gray-line {
     width: 100%;
     height: .2rem;
     background-color: rgb(238,238,238);
-} */
+}
+
 
 @media (min-width: 600px) {
     main {
@@ -178,8 +194,12 @@ header {
         padding: 2.4rem 3.2rem;
     }
 
-    header h1{
-        font-size: 4rem;
+    header {
+        margin-bottom: 2.4rem;
+
+        & > h1 {
+            font-size: 4rem;
+        }
     }
 
     #form-components form{
