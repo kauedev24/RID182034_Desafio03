@@ -143,7 +143,7 @@ const createCompletedTaskCounter = (tasks) => {
 }
 
 window.onload = function() {
-
+    localStorage.clear()
     const form = document.getElementById("form-components");
     form.addEventListener("submit", getInfoTask);
     
