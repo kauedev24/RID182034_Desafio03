@@ -5,6 +5,7 @@ const getTodayDate = () => {
     const month = date.getMonth() +1;
     const year = date.getFullYear();
     
+    if (month >= 10) return `${day}/${month}/${year}`;
     return `${day}/0${month}/${year}`;
 }
 
